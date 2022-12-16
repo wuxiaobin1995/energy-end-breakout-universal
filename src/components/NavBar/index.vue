@@ -1,7 +1,7 @@
 <!--
  * @Author      : Mr.bin
  * @Date        : 2021-09-08 15:00:05
- * @LastEditTime: 2021-09-09 15:42:07
+ * @LastEditTime: 2022-12-16 11:12:06
  * @Description : 导航栏-公共组件
 -->
 <template>
@@ -27,6 +27,11 @@
       <el-menu-item index="/record">
         <i class="el-icon-date"></i>
         <span>数 据 查 看 页</span>
+      </el-menu-item>
+
+      <el-menu-item index="/data-migration">
+        <i class="el-icon-s-data"></i>
+        <span>数 据 迁 移</span>
       </el-menu-item>
 
       <el-menu-item>

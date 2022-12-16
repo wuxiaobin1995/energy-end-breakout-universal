@@ -1,7 +1,7 @@
 /*
  * @Author      : Mr.bin
  * @Date        : 2021-09-08 10:43:09
- * @LastEditTime: 2021-09-09 15:43:38
+ * @LastEditTime: 2022-12-16 11:12:43
  * @Description : 路由
  */
 import Vue from 'vue'
@@ -39,6 +39,12 @@ const routes = [
         path: 'record',
         name: 'record',
         component: () => import('@/views/record')
+      },
+      // 数据迁移
+      {
+        path: 'data-migration',
+        name: 'data-migration',
+        component: () => import('@/views/data-migration')
       },
       // 刷新中转页
       {
