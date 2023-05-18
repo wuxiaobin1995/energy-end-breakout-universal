@@ -1,7 +1,7 @@
 <!--
  * @Author      : Mr.bin
  * @Date        : 2021-09-08 10:43:09
- * @LastEditTime: 2022-04-26 11:48:43
+ * @LastEditTime: 2023-05-18 14:18:19
  * @Description : 运动页面
 -->
 <template>
@@ -423,22 +423,22 @@ export default {
                   ))
               ) {
                 /* 安全开关，连续10分钟无动作，则自动断开蓝牙连接 */
-                if (speedData === 0) {
-                  this.isSafeSwitchClose += 1
-                } else {
-                  this.isSafeSwitchClose = 0
-                }
-                if (this.isSafeSwitchClose >= 6000) {
-                  this.isSafeSwitchClose = 0
-                  this.handleCloseBluetooth()
-                  this.clearSerialData()
-                  this.$message({
-                    message:
-                      '警告，检测到您连续10分钟内均没有动作，蓝牙已自动断开！',
-                    type: 'warning',
-                    duration: 10000
-                  })
-                }
+                // if (speedData === 0) {
+                //   this.isSafeSwitchClose += 1
+                // } else {
+                //   this.isSafeSwitchClose = 0
+                // }
+                // if (this.isSafeSwitchClose >= 6000) {
+                //   this.isSafeSwitchClose = 0
+                //   this.handleCloseBluetooth()
+                //   this.clearSerialData()
+                //   this.$message({
+                //     message:
+                //       '警告，检测到您连续10分钟内均没有动作，蓝牙已自动断开！',
+                //     type: 'warning',
+                //     duration: 10000
+                //   })
+                // }
 
                 /* 过滤掉速度 <0cm/s的数据 */
                 if (speedData >= 0) {
