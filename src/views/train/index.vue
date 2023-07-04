@@ -1,7 +1,7 @@
 <!--
  * @Author      : Mr.bin
  * @Date        : 2021-09-08 10:43:09
- * @LastEditTime: 2023-06-26 11:34:43
+ * @LastEditTime: 2023-07-04 11:52:26
  * @Description : 运动页面
 -->
 <template>
@@ -411,8 +411,8 @@ export default {
               const arrData = data.split(',')
               const speedData = parseFloat(parseFloat(arrData[0]).toFixed(1)) // 瞬时速度cm/s，保留1位小数
               const distanceData = parseFloat(
-                (parseFloat(arrData[1]) * 0.2).toFixed(0)
-              ) // 位移mm，有正负，不保留小数
+                (parseFloat(arrData[1]) * 0.4).toFixed(0)
+              ) // 位移mm，有正负，不保留小数（系数有误差的话，就改成0.43）
 
               /* 蓝牙逻辑 */
               // 蓝牙连接
